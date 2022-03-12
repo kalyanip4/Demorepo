@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-02-26T13:44:35Z" name="Default suite" finished-at="2022-02-26T13:44:49Z" duration-ms="14158">
+    <groups>
+    </groups>
+    <test started-at="2022-02-26T13:44:35Z" name="Default test" finished-at="2022-02-26T13:44:49Z" duration-ms="14158">
+      <class name="data_driven.Login_User">
+        <test-method is-config="true" signature="login()[pri:0, instance:data_driven.Login_User@132e0cc]" started-at="2022-02-26T13:44:35Z" name="login" finished-at="2022-02-26T13:44:40Z" duration-ms="4476" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="login_userdata(java.lang.String, java.lang.String)[pri:0, instance:data_driven.Login_User@132e0cc]" started-at="2022-02-26T13:44:40Z" name="login_userdata" data-provider="get_data_login" finished-at="2022-02-26T13:44:41Z" duration-ms="945" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cp@mailinator.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pqr@1234]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[success expected [[[ChromeDriver: chrome on WINDOWS (07567b5e028b6b35cfd503d7c4417e4c)] -> xpath: (//input[@name='search'])[1]]] but found [[[ChromeDriver: chrome on WINDOWS (07567b5e028b6b35cfd503d7c4417e4c)] -> xpath: //a[contains(text(),'iPhone')]]]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: success expected [[[ChromeDriver: chrome on WINDOWS (07567b5e028b6b35cfd503d7c4417e4c)] -> xpath: (//input[@name='search'])[1]]] but found [[[ChromeDriver: chrome on WINDOWS (07567b5e028b6b35cfd503d7c4417e4c)] -> xpath: //a[contains(text(),'iPhone')]]]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at data_driven.Login_User.validation_of_product(Login_User.java:76)
+at data_driven.Login_User.login_userdata(Login_User.java:54)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_userdata -->
+        <test-method is-config="true" signature="login()[pri:0, instance:data_driven.Login_User@132e0cc]" started-at="2022-02-26T13:44:41Z" name="login" finished-at="2022-02-26T13:44:44Z" duration-ms="2793" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="login_userdata(java.lang.String, java.lang.String)[pri:0, instance:data_driven.Login_User@132e0cc]" started-at="2022-02-26T13:44:44Z" name="login_userdata" data-provider="get_data_login" finished-at="2022-02-26T13:44:45Z" duration-ms="1018" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[dp@mailinator.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[xyz@456]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[success expected [[[ChromeDriver: chrome on WINDOWS (84b912619ccfb903b6480de0ace470d1)] -> xpath: (//input[@name='search'])[1]]] but found [[[ChromeDriver: chrome on WINDOWS (84b912619ccfb903b6480de0ace470d1)] -> xpath: //a[contains(text(),'iPhone')]]]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: success expected [[[ChromeDriver: chrome on WINDOWS (84b912619ccfb903b6480de0ace470d1)] -> xpath: (//input[@name='search'])[1]]] but found [[[ChromeDriver: chrome on WINDOWS (84b912619ccfb903b6480de0ace470d1)] -> xpath: //a[contains(text(),'iPhone')]]]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at data_driven.Login_User.validation_of_product(Login_User.java:76)
+at data_driven.Login_User.login_userdata(Login_User.java:54)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_userdata -->
+        <test-method is-config="true" signature="login()[pri:0, instance:data_driven.Login_User@132e0cc]" started-at="2022-02-26T13:44:45Z" name="login" finished-at="2022-02-26T13:44:48Z" duration-ms="3247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="login_userdata(java.lang.String, java.lang.String)[pri:0, instance:data_driven.Login_User@132e0cc]" started-at="2022-02-26T13:44:48Z" name="login_userdata" data-provider="get_data_login" finished-at="2022-02-26T13:44:49Z" duration-ms="1027" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[po@mailinator.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[rty@866]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[success expected [[[ChromeDriver: chrome on WINDOWS (7ab21a4eaab14f189a8f1beb59099f9c)] -> xpath: (//input[@name='search'])[1]]] but found [[[ChromeDriver: chrome on WINDOWS (7ab21a4eaab14f189a8f1beb59099f9c)] -> xpath: //a[contains(text(),'iPhone')]]]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: success expected [[[ChromeDriver: chrome on WINDOWS (7ab21a4eaab14f189a8f1beb59099f9c)] -> xpath: (//input[@name='search'])[1]]] but found [[[ChromeDriver: chrome on WINDOWS (7ab21a4eaab14f189a8f1beb59099f9c)] -> xpath: //a[contains(text(),'iPhone')]]]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at data_driven.Login_User.validation_of_product(Login_User.java:76)
+at data_driven.Login_User.login_userdata(Login_User.java:54)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_userdata -->
+      </class> <!-- data_driven.Login_User -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
